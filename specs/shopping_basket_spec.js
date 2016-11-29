@@ -2,6 +2,8 @@ var shoppingBasket = require('../shopping_basket');
 var assert = require("assert");
 
 var bread = require('../bread');
+var eggs = require('../eggs');
+var milk = require('../milk');
 
 describe("Shopping Basket", function(){
 
@@ -17,6 +19,11 @@ describe("Shopping Basket", function(){
   it("should add 2 items", function(){
     shoppingBasket.addToBasket(bread);
     assert.equal(2, shoppingBasket.basket.length);
+  })
+
+  it("should add 3 items", function(){
+    shoppingBasket.addToBasket(eggs);
+    assert.equal(3, shoppingBasket.basket.length);
   })
 
 })

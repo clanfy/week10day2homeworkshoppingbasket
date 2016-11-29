@@ -1,5 +1,5 @@
 var milk = {
-  name: "Milk"
+  name: "Milk",
   brand: "Cloverleaf",
   price: 0.85
 }
