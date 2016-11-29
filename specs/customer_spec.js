@@ -8,4 +8,8 @@ describe ("Customer", function(){
     assert.equal("Mavis", customer.name);
   });
 
+  it("should confirm loyalty card", function(){
+    assert.equal(true, customer.loyaltyCard);
+  });
+
 });
