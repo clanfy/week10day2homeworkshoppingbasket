@@ -31,7 +31,27 @@ var shoppingBasket = {
     } else {
       return total;
     }
+  },
+  loyaltyDiscount: function(){
+    var loyaltyTotal = 0;
+    if (this.customer.loyaltyCard = true){
+      var total = 0;
+      for (var item of this.basket){
+        total += item.price;
+      }
+      if (total >= 20){
+        var tenDiscount = (total * 0.10);
+        var tenDiscountTotal = total - tenDiscount;
+      } else {
+        var tenDiscountTotal = total;
+      }
+      var fiveDiscount = (tenDiscountTotal * 0.05);
+      return (tenDiscountTotal - fiveDiscount).toFixed(2);
+    } else {
+      return tenDiscountTotal.toFixed(2);
+    }
   }
+
 
 }
 

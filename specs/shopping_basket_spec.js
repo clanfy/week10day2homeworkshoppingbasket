@@ -49,6 +49,10 @@ describe("Shopping Basket", function(){
     assert.equal(true, customer.loyaltyCard);
   })
 
+  it("should return discounted total if loyalty card", function(){
+    assert.equal(20.09, shoppingBasket.loyaltyDiscount());
+  })
+
 })
 
 
