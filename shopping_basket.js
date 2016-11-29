@@ -17,10 +17,16 @@ var shoppingBasket = {
     return total;
   },
   tenPercentDiscount: function(){
-    if (this.basket.returnTotal() >= 20.00){
-      return this.basket.returnTotal() - (this.basket.returnTotal() * 0.10);
+    var total = 0;
+
+    for (var item of this.basket){
+      total += item.price;
+    }
+    if (total >= 20){
+      var discount = (total * 0.10);
+      return total - discount;
     } else {
-      return this.basket.returnTotal();
+      return total;
     }
   }
 
