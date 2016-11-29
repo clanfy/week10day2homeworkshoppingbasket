@@ -1,5 +1,8 @@
+var customer = require('./customer');
+
 var shoppingBasket = {
   basket: [],
+  customer: customer,
   addToBasket: function(item){
     this.basket.push(item);
     // console.log(item.name + "has been added to the basket.")
