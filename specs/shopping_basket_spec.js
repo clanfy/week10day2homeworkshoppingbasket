@@ -29,7 +29,11 @@ describe("Shopping Basket", function(){
   it("should remove item", function(){
     shoppingBasket.removeFromBasket(bread);
     assert.equal(2, shoppingBasket.basket.length);
-  })
+  });
+
+  it("should return total", function(){
+    assert.equal(3.50, shoppingBasket.returnTotal());
+  });
 
 })
 

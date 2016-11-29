@@ -9,6 +9,6 @@ describe("Milk", function(){
 
   it("should have price", function(){
     assert.equal(0.85, milk.price);
-  })
+  });
 
 })
