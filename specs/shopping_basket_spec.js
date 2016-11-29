@@ -31,8 +31,6 @@ describe("Shopping Basket", function(){
     assert.equal(2, shoppingBasket.basket.length);
   })
 
-
-
 })
 
 

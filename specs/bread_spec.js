@@ -7,4 +7,8 @@ describe("Bread", function(){
     assert.equal("Wonder Bread", bread.brand);
   });
 
+  it("should have price", function(){
+    assert.equal(1.50, bread.price)
+  });
+
 })
