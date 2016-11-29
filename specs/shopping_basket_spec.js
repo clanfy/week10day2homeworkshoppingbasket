@@ -1,5 +1,5 @@
 var shoppingBasket = require('../shopping_basket');
-var assert = require("assert");
+var assert = require('assert');
 
 var bread = require('../bread');
 var eggs = require('../eggs');
@@ -30,6 +30,8 @@ describe("Shopping Basket", function(){
     shoppingBasket.removeFromBasket(bread);
     assert.equal(2, shoppingBasket.basket.length);
   })
+
+
 
 })
 

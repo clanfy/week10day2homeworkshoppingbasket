@@ -9,7 +9,8 @@ var shoppingBasket = {
   removeFromBasket: function(item){
     var pos = this.basket.indexOf(item);
     this.basket.splice(pos, 1);
-  }
+  },
+  
 }
 
 module.exports = shoppingBasket;
