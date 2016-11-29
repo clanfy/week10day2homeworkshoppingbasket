@@ -14,4 +14,9 @@ describe("Shopping Basket", function(){
     assert.equal(1, shoppingBasket.basket.length);
   })
 
+  it("should add 2 items", function(){
+    shoppingBasket.addToBasket(bread);
+    assert.equal(2, shoppingBasket.basket.length);
+  })
+
 })
