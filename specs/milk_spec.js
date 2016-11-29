@@ -7,4 +7,8 @@ describe("Milk", function(){
     assert.equal("Cloverleaf", milk.brand);
   });
 
+  it("should have price", function(){
+    assert.equal(0.85, milk.price);
+  })
+
 })
