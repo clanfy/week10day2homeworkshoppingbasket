@@ -1,5 +1,3 @@
-
-
 var shoppingBasket = {
   basket: [],
   addToBasket: function(item){
@@ -17,6 +15,13 @@ var shoppingBasket = {
       total += item.price;
     }
     return total;
+  },
+  tenPercentDiscount: function(){
+    if (this.basket.returnTotal() >= 20.00){
+      return this.basket.returnTotal() - (this.basket.returnTotal() * 0.10);
+    } else {
+      return this.basket.returnTotal();
+    }
   }
 
 }

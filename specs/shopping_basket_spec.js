@@ -35,6 +35,10 @@ describe("Shopping Basket", function(){
     assert.equal(3.50, shoppingBasket.returnTotal());
   });
 
+  it("should not apply ten percent discount", function(){
+    assert.equal(3.50, shoppingBasket.tenPercentDiscount());
+  })
+
 })
 
 
