@@ -14,16 +14,26 @@ describe("Shopping Basket", function(){
   it("should add 1 item", function(){
     shoppingBasket.addToBasket(bread);
     assert.equal(1, shoppingBasket.basket.length);
-  })
+  });
 
   it("should add 2 items", function(){
     shoppingBasket.addToBasket(bread);
     assert.equal(2, shoppingBasket.basket.length);
-  })
+  });
 
   it("should add 3 items", function(){
     shoppingBasket.addToBasket(eggs);
     assert.equal(3, shoppingBasket.basket.length);
+  });
+
+  it("should remove item", function(){
+    shoppingBasket.removeFromBasket(bread);
+    assert.equal(2, shoppingBasket.basket.length);
   })
 
 })
+
+
+
+
+
