@@ -1,7 +1,9 @@
 var basket = require('./shopping_basket');
 
-var customer1 = {
+var customer = {
   name: "Mavis",
-  shoppingBasket: basket,
+  basket: basket,
   loyaltyCard: true
 }
+
+module.exports = customer;
